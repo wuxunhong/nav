@@ -175,17 +175,13 @@ window.onbeforeunload = function () {
   localStorage.setItem('x', string);
 }; //关闭页面时,会把hashMao变成字符串,存到Local Storage里面
 //键盘事件
-
-
-$(document).on('keypress', function (e) {
-  var key = e.key;
-
-  for (var i = 0; i < hashMao.length; i++) {
-    if (hashMao[i].logo.toLowerCase() === key) {
-      //如果hashMao的第i个变成toLowerCase(小写)之后等于key
-      window.open(hashMao[i].url); //我就打开这个网站
-    }
-  }
-});
+// $(document).on('keypress', (e) => {
+//   const { key } = e
+//   for (let i = 0; i < hashMao.length; i++) {
+//     if (hashMao[i].logo.toLowerCase() === key) { //如果hashMao的第i个变成toLowerCase(小写)之后等于key
+//       window.open(hashMao[i].url) //我就打开这个网站
+//     }
+//   }
+// })
 },{}]},{},["epB2"], null)
-//# sourceMappingURL=main.a2da6c4d.js.map
+//# sourceMappingURL=main.9ec234ab.js.map

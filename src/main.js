@@ -63,11 +63,11 @@ window.onbeforeunload = () => {
 
 
 //键盘事件
-$(document).on('keypress', (e) => {
-  const { key } = e
-  for (let i = 0; i < hashMao.length; i++) {
-    if (hashMao[i].logo.toLowerCase() === key) { //如果hashMao的第i个变成toLowerCase(小写)之后等于key
-      window.open(hashMao[i].url) //我就打开这个网站
-    }
-  }
-})
+// $(document).on('keypress', (e) => {
+//   const { key } = e
+//   for (let i = 0; i < hashMao.length; i++) {
+//     if (hashMao[i].logo.toLowerCase() === key) { //如果hashMao的第i个变成toLowerCase(小写)之后等于key
+//       window.open(hashMao[i].url) //我就打开这个网站
+//     }
+//   }
+// })
